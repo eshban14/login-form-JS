@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Log in / Sign up | Nothing4us </title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="box"></div>
+  <div class="container-forms">
+    <div class="container-info">
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Have an account?
+            </p>
+            <div class="btn">
+              Log in
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Have Secret Code?  
+            </p>
+            <div class="btn">
+              SC Login
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-form">
+      <div class="form-item log-in">
+        <div class="table">
+          <div class="table-cell">
+            <input id="username" name="Username" placeholder="Username" type="text" />
+            <input id="pw" name="Password" placeholder="Password" type="Password" />
+            <div class="btn" onclick="loginsc()">
+              Log in
+            </div>
+            <p id="uptext"></p>
+          </div>
+        </div>
+      </div>
+      <div class="form-item sign-up">
+        <div class="table">
+          <div class="table-cell">
+            <input id="sc_code" name="secret code" placeholder="secret code" type="text" />
+            <div class="btn" onclick="loginsc()">
+              Login
+            </div>
+            <p id="sctext"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+</body>
+</html>
+<script src="js/js.js"></script>
